@@ -11,7 +11,7 @@ export default function About() {
           <span className="text-foreground"> ABOUT_ME</span>
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
           {/* Left Column */}
           <div className="space-y-6">
             <div className="bg-card border border-primary/30 rounded p-6">
