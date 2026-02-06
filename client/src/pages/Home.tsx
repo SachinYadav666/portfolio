@@ -54,7 +54,7 @@ export default function Home() {
       <footer className="relative z-10 border-t border-border bg-card/50 backdrop-blur-sm py-8">
         <div className="container text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Sachin Yadav. Built with Love. 
+            © 2026 Sachin Yadav. Built with Love. 
           </p>
           <p className="text-muted-foreground text-xs mt-2">
             &gt; system.status: ONLINE | &gt; portfolio.version: 1.0.0 | &gt; Developer.level: EXPERT

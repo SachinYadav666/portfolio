@@ -1,3 +1,4 @@
+import { useIsMobile } from "@/hooks/useMobile";
 
 export default function Experience() {
   const experiences = [
@@ -36,13 +37,20 @@ export default function Experience() {
       color: 'text-accent',
     },
   ];
+  const isMobile= useIsMobile()
 
   return (
     <section id="experience" className="relative py-20 border-t border-primary/30">
       <div className="container">
         <h2 className="text-4xl font-bold mb-12 font-mono">
           <span className="text-accent neon-glow">&gt;</span>
-          <span className="text-foreground"> PROFESSIONAL_EXPERIENCE</span>
+          {!isMobile &&<span className="text-foreground"> PROFESSIONAL EXPERIENCE</span>}
+            {isMobile && 
+            <div className="flex flex-col justify-center items-center">
+            <span className="text-foreground"> PROFESSIONAL </span>
+               <span className="text-foreground">EXPERIENCE</span>
+               </div>}
+
         </h2>
 
         <div className="relative">

@@ -35,7 +35,7 @@ export default function Achievements() {
       <div className="container">
         <h2 className="text-4xl font-bold mb-12 font-mono">
           <span className="text-accent neon-glow">&gt;</span>
-          <span className="text-foreground"> ACHIEVEMENTS_UNLOCKED</span>
+          <span className="text-foreground"> ACHIEVEMENTS</span>
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

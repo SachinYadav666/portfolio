@@ -1,3 +1,5 @@
+import { useIsMobile } from "@/hooks/useMobile";
+
 /**
  * Projects Component
  * Design: Project cards with arcade aesthetic
@@ -39,12 +41,16 @@ export default function Projects() {
     },
   ];
 
+  const isMobile = useIsMobile()
+
   return (
     <section id="projects" className="relative py-20 border-t border-primary/30">
       <div className="container">
         <h2 className="text-4xl font-bold mb-12 font-mono">
           <span className="text-accent neon-glow">&gt;</span>
-          <span className="text-foreground"> FEATURED_PROJECTS</span>
+          {!isMobile &&<span className="text-foreground"> FEATURED PROJECTS</span>}
+            {isMobile && <div className="flex flex-col items-center justify-center"><span className="text-foreground"> FEATURED </span>
+      <span className="text-foreground"> PROJECTS </span>  </div>}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">

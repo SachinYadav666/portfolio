@@ -1,3 +1,5 @@
+import { useIsMobile } from "@/hooks/useMobile";
+
 /**
  * Skills Component
  * Design: Hexagonal skill badges with glitch effects on hover
@@ -26,12 +28,20 @@ export default function Skills() {
     },
   ];
 
+  const isMobile= useIsMobile()
+
   return (
     <section id="skills" className="relative py-20 border-t border-primary/30">
       <div className="container">
         <h2 className="text-4xl font-bold mb-12 font-mono">
           <span className="text-accent neon-glow">&gt;</span>
-          <span className="text-foreground"> TECHNICAL_SKILLS</span>
+          {!isMobile &&<span className="text-foreground"> TECHNICAL SKILLS</span>}
+          {isMobile && (
+            <div className="flex flex-col justify-center items-center">
+            <span className="text-foreground "> TECHNICAL</span>
+              <span className="text-foreground"> SKILLS</span>
+            </div>
+          ) }
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">
