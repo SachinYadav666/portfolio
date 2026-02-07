@@ -31,7 +31,7 @@ export default function Navigation() {
             {'<'}SACHIN{'>'}
           </div>
           <div className="text-xs text-muted-foreground font-mono">
-            AI/ML Engineer
+            Backend/AI Engineer
           </div>
         </div>
 
