@@ -14,7 +14,7 @@ export default function Contact() {
     },
     {
       label: 'LinkedIn',
-      href: 'www.linkedin.com/in/sachinyadav666',
+      href: 'https://www.linkedin.com/in/sachinyadav666/',
       icon: Linkedin,
       color: 'text-secondary',
     },
